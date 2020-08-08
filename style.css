@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+ img {
+    max-width: 100%;
+    height: auto;
+ }
+
+ body, html {
+    font-size: 17px;
+    height: 100%;
+    font-family: 'Poiret One', cursive;
+	font-weight: 700;
+    line-height: 1.8em;
+    background-color: #cccccc;
+}
+
+.navigation {
+    margin-top: 45px;
+    background: #7d7e7d;
+    background: -moz-linear-gradient(top, #7d7e7d 0%,#b6b6b6 8%, #6fa7ab 100%); 
+    background: -webkit-linear-gradient( left top, left bottom, color-stop(0%,#7d7e7d), color-stop(8%, #b6b6b6), color-stop(100%,#6fa7ab));
+    background: -webkit-linear-gradient(top,#7d7e7d 0%, #b6b6b6 8%, #6fa7ab 100%); 
+    background: -o-linear-gradient(top,#7d7e7d 0%, #b6b6b6 8%, #6fa7ab 100%); 
+    background: -ms-linear-gradient(top,#7d7e7d 0%, #b6b6b6 8%, #6fa7ab 100%); 
+    background: linear-gradient(to bottom, #7d7e7d 0%,#b6b6b6 8%, #6fa7ab 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6b6b6', endColorstr='#6fa7ab',GradientType=0 );
+}
+
+.navigation .fa-icons {
+    margin-top: 10px;
+}
+
+.navbar-toggle .icon-bar{
+    background-color: #3d3c3c;
+}
+
+.navigation ul {
+    text-transform: uppercase;
+}
+
+.navigation ul li {
+	text-align: center;
+}
+ 
+.navigation ul li a{
+    color: #3d3c3c;
+    font-size: 22px;
+	text-decoration: none;
+    display: block;
+    font-weight: bold;
+    position: relative;
+}
+
+.navigation ul li a:before {
+    content: '';
+    width: 0px;
+    height: 3px;
+    background: rgba(126, 126, 126, 0.5);
+    position: absolute;
+    top: 90%;
+    left: 0;
+    transition: 0.5s ease;
+}
+
+.navigation ul li:hover a:before{
+    width: 50%;
+    transform: translateX(100%);
+}
+
+.navigation ul li a:hover {
+    transition: ease 0.6s;
+}
+
+.active-nav {
+    background: rgb(125, 126, 125);
+}
+
+.home-page {
+    height: 100%;
+}
+
+.home-page-img {
+    min-height: 430px;
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+    z-index: -2;
+}
+
+
+.brand h1{
+    margin: 0 -8px;
+    padding: 10px 8px 10px 80px;
+    font-weight: 800;
+   
+}
+
+.about{
+    padding: 3%;
+    height: 100%;
+    width: 100%;
+    background: #b6b6b6; 
+    background: -webkit-linear-gradient(to top,#f0f0f0, #b6b6b6);  
+    background: linear-gradient(to top,#f0f0f0, #b6b6b6);
+}
+
+.about p {
+    line-height: 30px;
+    font-size: 20px;
+    animation-delay: 0.5s;
+}
+
+.about h2 {
+    font-weight: bold;
+}
+
+.portfolio-page {
+    margin-bottom: 45px;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-page h2 {
+    text-transform: uppercase;  
+}
+
+.radovi h3:before, 
+.radovi h3:after {
+	content: "";
+	height: 1px;
+	position: absolute;
+	top: 50px;
+    width: 30%; 
+}
+
+.radovi h3:after {
+	background: rgb(126,126,126);
+	background: -moz-linear-gradient(left, rgba(126,126,126,1) 0%, rgba(202, 201, 201,1) 100%);
+	background: -webkit-linear-gradient(left, rgba(126,126,126,1) 0%,rgba(202, 201, 201,1) 100%);
+	background: -o-linear-gradient(left, rgba(126,126,126,1) 0%,rgba(202, 201, 201,1) 100%);
+	background: -ms-linear-gradient(left, rgba(126,126,126,1) 0%,rgba(202, 201, 201,1) 100%);
+	background: linear-gradient(left, rgba(126,126,126,1) 0%,rgba(202, 201, 201,1) 100%);
+    right: 0;
+}
+
+.radovi h3:before {
+	background: rgb(126,126,126);
+	background: -moz-linear-gradient(right,  rgba(126,126,126,1) 0%, rgba(202, 201, 201,1) 100%);
+	background: -webkit-linear-gradient(right,  rgba(126,126,126,1) 0%,rgba(202, 201, 201,1) 100%);
+	background: -o-linear-gradient(right,  rgba(126,126,126,1) 0%,rgba(255, 254, 253,1) 100%);
+	background: -ms-linear-gradient(right,  rgba(126,126,126,1) 0%,rgba(202, 201, 201,1) 100%);
+	background: linear-gradient(right,  rgba(126,126,126,1) 0%,rgba(202, 201, 201,1) 100%);
+    left: 0;
+}
+
+.side-info {
+    height: 100vh;
+    max-width: 100%;
+    width: 25%; 
+    position: fixed; 
+    top: 0;
+    left: 0%;
+    bottom: 0%;
+    z-index: 1;
+    overflow: hidden; 
+    padding-top: 20px;
+    background: #91adaf; 
+    background: -webkit-linear-gradient(to right, #b6b6b6, #91adaf);  
+    background: linear-gradient(to right, #b6b6b6, #91adaf); 
+    border-right: 1px solid #7d7e7d;
+    box-shadow: 0px 5px 20px #7d7e7d;
+}
+
+.side-info .card-header .btn-link {
+    color:#3d3c3c;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.side-info .card-header .btn-link:hover, .card-body a:hover {
+    color: #9e9c9c;
+    transition: 0.3s;
+}
+
+.card-body a {
+    text-decoration: none;
+    color: #3d3c3c;
+}
+
+.fa-icons a{
+    text-decoration: none;
+    font-size: 24px;
+    color: rgba(61, 60, 60, 0.7);
+    margin-top: 10px;
+    margin-left: 12px;
+}
+
+.fa-icons a:hover {
+    color: #9e9c9c;
+    transition: 0.3s;
+}
+.slike {
+    margin-left: -8px;
+}
+
+.slike:hover img {
+    opacity: 0.70;
+    transform: scale(0.92);
+    transition: all .4s ease-in-out;
+}
+
+.slike img:hover {
+    transform:scale(1.1);
+    opacity: 1;
+}
+
+.galerija a, .video-galerija a, .animacija a {
+    float: left;
+    width: 33%;
+    height: auto;
+    padding-left: 8px;
+    margin-bottom: 8px;
+}
+
+.portfolio-page .galerija, .video-galerija, .animacija {
+    margin-bottom: 8px;
+}
+
+.portfolio-page .galerija h3, .video-galerija h3, .animacija h3{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.contact {
+    padding-top: 5%;
+}
+
+.contact-icon{
+    height: auto;
+    max-width: 200px;
+    margin-top: 30px; 
+}
+
+.contact-info p {
+    padding: 20px 0px;
+    margin: 20px 0px;
+    line-height: 50px;
+    font-size: 22px;  
+}
+
+.contact-info a, .about a{
+    color: #5d8a8d;
+}
+
+.contact-info a:hover,.about a:hover{
+    color:#555555;
+    transition: 0.5s ease;
+    text-decoration: none;
+}
+
+#myBtn {
+    display: none;
+    position: fixed; 
+    bottom: 80px; 
+    right: 30px; 
+    z-index: 99;
+    border: none; 
+    outline: none; 
+    background-color: #91adaf;
+    opacity: 0.9; 
+    height: 55px;
+    width: 55px;
+    transition: ease 0.5s;
+    color: white;
+    cursor: pointer;
+    padding: 0 10px 5px; 
+    border-radius: 50%;
+    font-size: 22px; 
+    -webkit-box-shadow: inset -1px 4px 45px -12px rgb(125, 126, 125);
+    -moz-box-shadow: inset -1px 4px 45px -12px rgb(125, 126, 125);
+    box-shadow: inset -1px 4px 45px -12px rgb(125, 126, 125); 
+}
+
+#myBtn:hover {
+    background-color: #555555;
+}
+@media (min-width: 1920px) {
+    .home-page-img {
+        min-height: 720px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation .fa-icons {
+        display: none;
+    }
+
+    .contact {
+        top: 0;
+        left: 0%;
+        margin-top: 45px;
+        margin-left: 8px;
+    }
+
+    .contact-icon {
+        max-width: 80px;   
+    }
+
+    .contact-info p {
+        padding: 0px;
+        margin: 20px 0px;
+        font-size: 20px;   
+    }
+
+   .side-info h2 {
+        font-size: 24px;
+        padding-left: 8px;
+    }
+
+   .card-body a {
+        font-size: 18px;
+        padding-left: 8px;
+    }
+
+    .portfolio-page h3 {
+        font-size: 24px;
+    }
+
+    .portfolio-page .galerija h3 {
+        font-size: 24px;
+        padding-top: 0px;
+    }
+
+    .radovi h3:before,
+    .radovi h3:after {
+        top: 14%;   
+    }
+
+    .galerija h3:before,
+    .galerija h3:after {
+        top: 8%;  
+    }
+}
+
+@media (max-width: 745px) {
+    .side-info .fa-icons {
+        margin: 20px 8px 0px 0;
+    }
+    
+    .side-info {
+        position: static;
+        max-width: 100%;
+        width: 745px;
+        display: flex;
+        padding: 10px 20px;
+        height: 50%;
+        margin-left: 0px;
+        margin-bottom: 10px;   
+    }
+
+    .side-info #accordion {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 500px) {
+    .brand h1{
+        font-size: 30px;
+        padding: 10px 20%;
+    }
+
+    .side-info {
+        position: static;
+        max-width: 100%;
+        display: flex;
+        padding: 10px 20px;
+        height: 50%;
+        margin-left: 0px;
+        margin-bottom: 10px;  
+    }
+
+    .side-info #accordion {
+        margin-left: 30px;
+    }
+
+    .side-info h2 {
+        font-size: 26px;
+        padding-top: 10%;
+    }
+
+    .side-info .card-header .btn-link {
+        font-size: 18px;
+    }
+
+    .side-info .fa-icons {
+        margin: 20px 8px 0px 0;
+    }
+    
+    .portfolio-page h3 {
+        font-size: 20px;
+    }
+
+    .portfolio-page .galerija h3 {
+        font-size: 20px;
+        padding-top: 0px;
+    }
+
+    .radovi .galerija  h3:before,
+    .radovi .galerija  h3:after {
+       width: 8%;
+       top: 30%;  
+    }
+
+    .radovi h3:before,
+    .radovi h3:after {
+       width: 8%;
+        top: 19%;    
+    }
+
+    .about {
+        padding: 0px;
+        margin-bottom: 45px;
+        height: auto;
+    }
+
+    .contact {
+        top: 0;
+        left: 0%;
+        margin-bottom: 45px;
+        margin-top: -8px;
+    }
+
+    .contact-icon {
+        max-width: 120px;    
+    }
+}
